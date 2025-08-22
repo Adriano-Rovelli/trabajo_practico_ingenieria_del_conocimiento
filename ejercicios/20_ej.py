@@ -5,10 +5,8 @@ La función debe devolver un diccionario con las configuraciones aplicadas.
 configurar_app(modo_oscuro=True, idioma="es", notificaciones=False)
 '''
 
-from new_functions import create_dict
-
 def app_configuration(**configuration):
-    return create_dict(**configuration)
+    return configuration
 
-if __name__ == '__main__':
-    print(app_configuration(modo_oscuro=True, idioma="es", notificaciones=False))
+
+print(app_configuration(modo_oscuro=True, idioma="es", notificaciones=False))

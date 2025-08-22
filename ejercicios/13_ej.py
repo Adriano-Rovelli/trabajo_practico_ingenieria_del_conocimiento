@@ -7,7 +7,7 @@ estudiantes = {
     102: {"nombre": "Luis", "edad": 17, "calificaciones": {"matemáticas": 78, "ciencias": 88}}
 }
 '''
-from new_functions import is_empty, avg
+from module.new_functions import is_empty, avg
 
 def avg_califications(dict_students: dict):
     if is_empty(dict_students):
@@ -22,10 +22,10 @@ def avg_califications(dict_students: dict):
 
     return avg_students
 
-if __name__ == '__main__':
-    students = {
-        101: {"nombre": "Ana", "edad": 16, "calificaciones": {"matemáticas": 85, "ciencias": 90}},
-        102: {"nombre": "Luis", "edad": 17, "calificaciones": {"matemáticas": 78, "ciencias": 88}}
-    }
 
-    print(avg_califications(students))
+students = {
+    101: {"nombre": "Ana", "edad": 16, "calificaciones": {"matemáticas": 85, "ciencias": 90}},
+    102: {"nombre": "Luis", "edad": 17, "calificaciones": {"matemáticas": 78, "ciencias": 88}}
+}
+
+print(avg_califications(students))

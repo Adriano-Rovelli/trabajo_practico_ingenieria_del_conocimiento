@@ -15,11 +15,11 @@ def given_salary(employees_dict: dict, salary_min: float):
             print(employees_dict[key])
 
 
-if __name__ == '__main__':
-    employees = {
-        1: ("Ana", 30, 3000),
-        2: ("Luis", 25, 2500),
-        3: ("María", 35, 4000)
-    }
 
-    given_salary(employees, 3000)
+employees = {
+    1: ("Ana", 30, 3000),
+    2: ("Luis", 25, 2500),
+    3: ("María", 35, 4000)
+}
+
+given_salary(employees, 3000)

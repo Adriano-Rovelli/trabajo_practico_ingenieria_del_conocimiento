@@ -3,12 +3,13 @@ Manejo de parámetros variables con *args:Consigna: Escribe una función que rec
 Utiliza *args para recibir las notas.calcular_promedio(85, 90, 78, 92)
 '''
 
-from new_functions import avg_args
+from module.new_functions import avg
 
 def calculate_avg(*args):
-    return avg_args(*args)
+    total = sum(args)
+    print(avg(total, count = len(args)))
 
 
-if __name__ == '__main__':
-    print(calculate_avg(85, 90, 78, 92))
+
+print(calculate_avg(85, 90, 78, 92))
     

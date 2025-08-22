@@ -19,11 +19,11 @@ def season_results(results: dict):
     print(f'Goles marcados: {counter_goals}')
     print(f'Goles recibidos: {counter_goals_received}')
 
-if __name__ == '__main__':
-    resultados = {
-        "Equipo A": (3, 2),
-        "Equipo B": (1, 1),
-        "Equipo C": (4, 0)
-    }
 
-    season_results(resultados)
+resultados = {
+    "Equipo A": (3, 2),
+    "Equipo B": (1, 1),
+    "Equipo C": (4, 0)
+}
+
+season_results(resultados)

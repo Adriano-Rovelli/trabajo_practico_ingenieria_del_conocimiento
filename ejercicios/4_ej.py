@@ -3,5 +3,5 @@ Crea un código que le permita ingresar una respuesta al usuario, haciéndole la
 ¿En qué país vives?
 El código debe poder imprimir en pantalla lo ingresado por el usuario (utilizando print).
 '''
-if __name__ == "__main__":
-    print(input('¿En qué país vives?: '))
+
+print(input('¿En qué país vives?: '))
