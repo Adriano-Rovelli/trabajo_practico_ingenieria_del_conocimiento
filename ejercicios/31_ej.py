@@ -7,7 +7,12 @@ La funci√≥n debe devolver un diccionario con todos los detalles de la publicaci√
 publicar("Juan", "Mi primer post!", etiquetas=["#hola", "#primerPost"], visibilidad="publica", likes=100)
 '''
 
-def publicate(name, text_publication, tags, **kwargs):
-    publication_dict = dict()
+def publicate(name:str, description:str, **publication_atributes):
+    publication = {'nombre': name, 'descripcion': description}
+    publication.update(publication_atributes)
+
+    print(publication)
+
+publicate("Juan", "Mi primer post!", etiquetas=["#hola", "#primerPost"], visibilidad="publica", likes=100)
 
     
